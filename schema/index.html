@@ -1,0 +1,174 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/styles.css">
+<link rel="stylesheet" href="/static/pygments.css">
+<script type="text/javascript" src="/static/app.js"></script>
+<title>yaml-resume | Schema</title>
+<body class="default">
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed"
+          data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/"><img class="navbar-brand logo" src="/logo.png"></></a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+              <a href="/get-started">Get Started</a>
+          </li>
+        
+          <li class="active">
+              <a href="/schema">Schema</a>
+          </li>
+        
+          <li>
+              <a href="/themes">Themes</a>
+          </li>
+        
+          <li>
+              <a href="#">Resume Builder (soon)</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="body-wrapper">
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+      
+  <h1 id="schema">Schema</h1><p>yaml-resume schema should respect the following structure:</p>
+<div class="highlight"><pre><span></span><span class="nt">contact</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">John Doe</span>
+  <span class="nt">email</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">john@doe.com</span>
+  <span class="nt">date_of_birth</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">01/01/1990</span>
+  <span class="nt">job</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Python Developer</span>
+  <span class="nt">location</span><span class="p">:</span>
+    <span class="nt">address</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">10 Downing Street</span>
+    <span class="nt">city</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">London</span>
+    <span class="nt">country</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">UK</span>
+    <span class="nt">zip</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">SW1A 2AA</span>
+  <span class="nt">phone</span><span class="p">:</span> <span class="s">&#39;+44612345678&#39;</span>
+<span class="nt">experiences</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="nt">company</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Foo company</span>
+  <span class="nt">position</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Senior Python Developer</span>
+  <span class="nt">start_date</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">January 2018</span>
+  <span class="nt">summary</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+        <span class="no">Developer for the main Foo webapp</span>
+        <span class="no">Worked on migration from python 2.7 to 3.6</span>
+        <span class="no">Scrum master for the team of 8 people</span>
+        <span class="no">Added automated unit tests</span>
+  <span class="nt">website</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://foo.com</span>
+  <span class="nt">tags</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">flask</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">mongodb</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">redis</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pytest</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">scrum</span>
+<span class="p p-Indicator">-</span> <span class="nt">company</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Bar company</span>
+  <span class="nt">position</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Python developer</span>
+  <span class="nt">start_date</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">January 2014</span>
+  <span class="nt">end_date</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">December 2017</span>
+  <span class="nt">summary</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+        <span class="no">Made Bar backoffice main features</span>
+        <span class="no">Worked on CI/CD</span>
+  <span class="nt">website</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://bar.net</span>
+  <span class="nt">tags</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">django</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">mysql</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">jenkins</span>
+<span class="p p-Indicator">-</span> <span class="nt">company</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Bar company</span>
+  <span class="nt">position</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Junior python developer</span>
+  <span class="nt">start_date</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">January 2012</span>
+  <span class="nt">end_date</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">December 2013</span>
+  <span class="nt">website</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://bar.net</span>
+  <span class="nt">summary</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+        <span class="no">Made multiple KPI dashboards</span>
+        <span class="no">Provided automation scripts</span>
+<span class="nt">profiles</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="nt">network</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Facebook</span>
+  <span class="nt">url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://facebook.com/johndoe</span>
+<span class="p p-Indicator">-</span> <span class="nt">network</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Twitter</span>
+  <span class="nt">url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://twitter.com/nottherealjohndoe</span>
+<span class="p p-Indicator">-</span> <span class="nt">network</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Personal website</span>
+  <span class="nt">url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://john.doe.fake</span>
+<span class="nt">education</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="nt">degree</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Bachelor of Software Engineering</span>
+  <span class="nt">start_date</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">January 2008</span>
+  <span class="nt">end_date</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">January 2012</span>
+  <span class="nt">institution</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">University of California, Berkeley</span>
+  <span class="nt">website</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://www.berkeley.edu</span>
+<span class="nt">skills</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Python</span>
+  <span class="nt">level</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">90</span>
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Flask</span>
+  <span class="nt">level</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">80</span>
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Scrum</span>
+  <span class="nt">level</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">80</span>
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Java</span>
+  <span class="nt">level</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">50</span>
+<span class="nt">languages</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">English</span>
+  <span class="nt">level</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Native language</span>
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">French</span>
+  <span class="nt">level</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Proficient</span>
+<span class="nt">projects</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">foo.bar</span>
+  <span class="nt">description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Just an useless app</span>
+  <span class="nt">url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/johndoe/foo.bar</span>
+<span class="nt">hobbies</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">History</span>
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Sport</span>
+  <span class="nt">details</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Running and weightlifting</span>
+</pre></div>
+
+
+      </div>
+        <div class="col-sm-3">
+          <div class="github-button">
+            <a class="github-button"
+              href="https://github.com/notsag/yaml-resume"
+              data-size="large"
+              data-show-count="true"
+              aria-label="Star yaml-resume on GitHub"
+            >Star</a>
+          </div>
+          <div class="infobox">
+            <p><span class="fa fa-fw fa-github"></span> <a href="https://github.com/notsag/yaml-resume">notsag/yaml-resume </a>
+            <p><span class="fa fa-fw fa-list"></span> <a href="https://pypi.python.org/pypi/yaml-resume">Releases on PyPI</a>
+            <p><span class="fa fa-fw fa-cogs"></span> <a href="https://travis-ci.com/notsag/yaml-resume">Test status</a>
+            <p><span class="fa fa-fw fa-book"></span> <a href="https://docs.yaml-resume.com">Documentation</a>
+            <div class="pypi-box" data-pypi="yaml-resume"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <a href="https://github.com/notsag/yaml-resume/blob/master/LICENSE">License &amp; Copyright</a> •
+          <a href="https://github.com/notsag/yaml-resume/issues">Report a bug or ask for a feature</a> •
+          Website made with <a href="https://www.getlektor.com/">Lektor</a>.
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+</body>
